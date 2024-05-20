@@ -1,0 +1,558 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfde6;
+}
+
+.nav-container {
+    background-color: #524b3d;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-container .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 10px; 
+}
+
+.nav-container .navigation img {
+    margin-right: 10px;
+}
+
+.navigation .logo-1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+}
+
+.navigation .logo-2 {
+    width: 100px;
+    height: 50px;
+}
+
+
+.nav-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.nav-content li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav-content a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-content a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(237, 226, 226);
+    bottom: -3px;
+    left: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-content a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.content {
+    padding: 80px;
+}
+
+.ano {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 10px;
+    border-bottom: solid 5px #070604 ;
+}
+
+.ano img {
+    width: 200%;
+    border-radius: 2000px;
+    
+}
+footer {
+    background-color: #070604;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+}
+.sikat{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-left: 4%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: justify;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.sikat :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.kainan{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-left: 0%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.kainan :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.sarap{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-left: 8%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.sarap :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.yummy{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-left: 2%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.yummy :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.sarsa{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-left: 0%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    padding-bottom: 5%;
+    border-bottom: solid 4px black;
+}
+.sarsa :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container{
+text-align: center;
+padding-top: 5%;
+}
+.ospi{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-left: 8%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.ospi :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.tal{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-left: 8%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    padding-bottom: 5%;
+    border-bottom: solid 4px black;
+}
+.tal :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.gamot{
+    text-align: center;
+    padding-top: 5%;
+}
+.trabaho{
+    text-align: center;
+    padding-top: 5%;
+}
+.utang{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right: 30%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.utang :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.bayad{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right: 40%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.bayad :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.sahod{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right: 32%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.sahod :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.bensido{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right: 23%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.bensido hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.puhunan{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right: 24%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.puhunan :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.tamad{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right: 26%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.tamad :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.masipag{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right: 40%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.masipag :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.boplaks{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right: 30%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    padding-bottom: 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border-bottom: solid 4px black;
+}
+.boplaks :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.facts{
+    text-align: center;
+    padding-top: 5%;
+}
+.general{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right: 20%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.general :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.church{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right: 25%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.church :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.court{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right: 20%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.court :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.sayawan{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right: 33%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    padding-bottom: 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border-bottom: solid 4px black;
+}
+.sayawan{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.govern{
+    text-align: center;
+    padding-top: 5%;
+}
+.hall{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right:20%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    padding-bottom: 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border-bottom: solid 4px black;
+}
+.hall :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.aral{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right:3%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.aral :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.aralan{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right: 1.5%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.aralan :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.aklat{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right: 3.5%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.aklat :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.aklatan{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right: 30%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.aklatan :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.hapon{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right: 23%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    flex-direction: row;
+    padding-bottom: 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border-bottom: solid 4px black;
+}
+.hapon :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.2);
+}
+.iskul{
+    text-align: center;
+    padding-top: 5%;
+}

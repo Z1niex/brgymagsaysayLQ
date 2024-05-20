@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfde6;
+}
+
+.nav-container {
+    background-color: #524b3d;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-container .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 10px; 
+}
+
+.nav-container .navigation img {
+    margin-right: 10px;
+}
+
+.navigation .logo-1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+}
+
+.navigation .logo-2 {
+    width: 100px;
+    height: 50px;
+}
+
+
+.nav-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.nav-content li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav-content a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-content a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(237, 226, 226);
+    bottom: -3px;
+    left: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-content a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.content {
+    padding: 80px;
+}
+
+.ano {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 10px;
+    border-bottom: solid 5px #070604 ;
+}
+
+.ano img {
+    width: 200%;
+    border-radius: 2000px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.ano :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #070604;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+}
+.kanton{
+    padding-left: 37%;
+    background-image: url(img/bg2.webp);
+    background-size: cover;
+    background-position: center;
+}
+.othernav{
+    padding-top: 7%;
+    padding-bottom: 15%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.othernav :hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.kapitan{
+    padding: 7%;
+    text-align: justify;
+    font-size: larger;
+}
